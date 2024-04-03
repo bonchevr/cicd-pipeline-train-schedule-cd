@@ -33,8 +33,10 @@ pipeline {
                                     )
                                 ]
                             )
-                        ]
-                    )
+                        ] // This was missing in your script
+                    ) // <-- Move this closing bracket to the end of the sshPublisher block
                 }
             }
         }
+    }
+}
